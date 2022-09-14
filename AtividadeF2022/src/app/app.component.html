@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda</title>
+  <style type="text/css">
+    body {
+      position: relative;
+      background-color: rgba(253, 247, 247, 0.767);
+    }
+
+    .especial {
+      font: bold;
+      background-color: rgb(173, 241, 219);
+      border: 1px so-lid #f00;
+    }
+
+    body,
+    head {
+      position: relative;
+      width: 960px;
+      margin: auto;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Agenda</h1>
+  <p class="especial"> Lista
+    Lista de Alunos</p>
+
+  <div class="content"></div>
+  <table class="rTable">
+    <thead>
+      <tr>
+        <th>Aluno</th>
+        <th>RU</th>
+        <th>Curso</th>
+        <th>Data de Nascimento</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let people of dadosTotais ">
+        <td>{{people.Nome}}</td>
+        <td>{{people.RU}}</td>
+        <td>{{people.Curso}}</td>
+        <td>{{people.DN}}</td>
+      </tr>
+    <tbody>
+  </table>
+  <div></div>
+
+  <body>
+
+  </body>
+</body>
+<html>
+
+</html>
